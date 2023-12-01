@@ -1,0 +1,117 @@
+doctype html5
+html
+    head
+        title Cabo Transportation · Exclusive Services
+        include ../_partials/header-main
+        include ../_partials/panel-scripts
+        include ../_partials/scripts
+    body
+        section#main-reservation
+            .container
+                #panel-step-1
+                    form
+                        .row
+                            .col-xs-12
+                                h2
+                                    | Reservations
+                            .col-6
+                                label Hotel
+                                input#form-panel-hotel.form-control(placeholder="Select your hotel")
+                            .col-6
+                                label Passengers
+                                select#form-panel-passengers.form-control
+                                    option(name='passengers', value='1') 1 Passenger
+                                    option(name='passengers', value='2') 2 Passengers
+                                    option(name='passengers', value='3') 3 Passengers
+                                    option(name='passengers', value='4') 4 Passengers
+                                    option(name='passengers', value='5') 5 Passengers
+                                    option(name='passengers', value='6') 6 Passengers
+                                    option(name='passengers', value='7') 7 Passengers
+                                    option(name='passengers', value='8') 8 Passengers
+                                    option(name='passengers', value='9') 9 Passengers
+                                    option(name='passengers', value='10') 10 Passengers
+                                    option(name='passengers', value='11') 11 Passengers
+                                    option(name='passengers', value='12') 12 Passengers
+                                    option(name='passengers', value='13') 13 Passengers
+                                    option(name='passengers', value='14') 14 Passengers
+                                    option(name='passengers', value='15') 15 Passengers
+                                    option(name='passengers', value='16') 16 Passengers
+                                    option(name='passengers', value='17') 17 Passengers
+                            .col-6
+                                label Service
+                                select#form-panel-service.form-control(name='Service')
+                                    option(date='One Way', value='One Way')
+                                        | One Way
+                                    option(data='Round Trip', value='Round Trip')
+                                        | Round Trip
+                            .col-6
+                                label Departure
+                                select#form-panel-destination.form-control(name="Destination")
+                                    option(data="Airport - Hotel", value="Airport - Hotel")
+                                        | From Airport to Hotel
+                                    option(data="Hotel - Airport", value="Hotel - Airport")
+                                        | From Hotel to Airport
+                            .col-6
+                                label Full Name
+                                input#form-panel-name.form-control(placeholder="Name")
+                            .col-6
+                                label Email
+                                input#form-panel-email.form-control(type="email" name='email', placeholder="Email")
+                            .col-6
+                                label Phone
+                                input#form-panel-phone.form-control(type='number', name='phone', placeholder='Phone')
+                            .col-6
+                                label Price
+                                input#form-panel-price.form-control(type='number', name='phone', placeholder='Price')
+
+                        .row-group#panel-arrival
+                            .col-12.text-center
+                                h3
+                                    | Arrival Information
+                            .row
+                                .col-6
+                                    label Date
+                                    input#form-panel-arrival-date.form-control(type='date', name='arrivaldate')
+                                .col-6
+                                    label Time
+                                    input#form-panel-arrival-time.form-control(type='time', name='arrivaltime')
+                            .row
+                                .col-6
+                                    label Airline
+                                    input#form-panel-arrival-airline.form-control
+
+                                .col-6
+                                    label Flight #
+                                    input#form-panel-arrival-flight.form-control(type='text', name='arrivalflight', placeholder="Flight")
+
+                        .row-group#panel-departure
+                            .row.roundtrip
+                                .col-12.text-center
+                                    h3
+                                        | Departure Information
+                            .row.roundtrip
+                                .col-6
+                                    label Date
+                                    input#form-panel-departure-date.form-control(type='date', name='departuredate')
+                                .col-6
+                                    label Time
+                                    input#form-panel-departure-time.form-control(type='time', name='departuretime')
+                            .row.roundtrip
+                                .col-6
+                                    label Airline
+                                    input#form-panel-departure-airline.form-control
+
+                                .col-6
+                                    label Flight #
+                                    input#form-panel-departure-flight.form-control(type='text', name='departureflight', placeholder="Flight")
+
+                        .row
+                            .col-12
+                                label Comments
+                                textarea#form-panel-comment.form-control(name='comments', placeholder='Comments')
+
+                        .row
+                            .col-12
+                                input#send-panel-mail.submit-button(type="button", name="SEND", value="SEND")
+                #panel-step-2
+                    h3 Reservations is already sended
