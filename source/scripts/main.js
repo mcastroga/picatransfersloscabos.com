@@ -8,6 +8,33 @@ tax = null;
 pricetotal = null;
 
 $( document ).ready(function() {
+
+    var n = 1;
+
+    $('#form-unit').val(n);
+
+    $('.qtyplus').on('click', function(){
+        if (n < 16) {
+            $('#form-unit').val(++n);
+            $('#form-unit').attr('value', n);
+            $('#form-unit').attr('name', n);
+        }
+    })
+
+    $('.qtyminus').on('click', function(){
+        if (n > 1) {
+            $('#form-unit').val(--n);
+            $('#form-unit').attr('value', n);
+            $('#form-unit').attr('name', n);
+        } else {
+
+        }
+    });
+
+    $.getJSON( "/json/transfers.json", function( data ) {
+        cars = data.units
+    });
+
     function getPosition(unit) {
         for(var car in cars) {
             if( cars[car].name === unit) return car;
@@ -15,17 +42,9 @@ $( document ).ready(function() {
         return -1;
     }
 
-    $.getJSON( "/json/transfers.json", function( data ) {
-        for (units in data.units){
-            $("#form-unit").append("<option value='" + data.units[units].name + "'>" + data.units[units].name + "</option>");
-        }
-        cars = data.units
-    });
-
     // STEP 2
 
     $("#send-prebook").on("click", function() {
-
         $("#step-2").css("display", "none");
         $("#step-3").css("display", "block");
         $("#arrival").show();
@@ -36,11 +55,9 @@ $( document ).ready(function() {
         };
     });
 
-    $("#send-checkout").click(function() {
-        $("#step-3").css("display", "none");
+    $("#send-book").on("click", function() {
         $("#step-4").css("display", "block");
-        $("#selector-step-2").removeClass('selected');
-        $("#selector-step-3").addClass('selected');
+        $("#step-3").css("display", "none");
     });
 
     function updatePrices(event) {
@@ -53,7 +70,6 @@ $( document ).ready(function() {
         $( "#send-prebook" ).attr('disabled', 'disabled');
         if (unitIndex < 0 || selectedUnit === "false" || selectedZone  === "false") return;
 
-
         if ($("#form-service").val() === "Round Trip") {
             $("#departure").css("display", "flex");
             $("#arrival").css("display", "flex");
@@ -63,7 +79,17 @@ $( document ).ready(function() {
         if($("#form-service").val() === "One Way") {
             $( "#departure" ).css("display", "none");
             $( "#arrival").css("display", "flex");
-            $("#only-oneway").css("display", "flex");
+            $("#only-oneway").css("display", "block");
+        };
+
+        if($('#form-unit').val() === "1" || $('#form-unit').val() === "2" || $('#form-unit').val() === "3" || $('#form-unit').val() === "4" || $('#form-unit').val() === "5") {
+            $('#square-image').css('background-image', 'url("/images/photos/suburban.jpg")')
+        };
+        if($('#form-unit').val() === "6" || $('#form-unit').val() === "7" || $('#form-unit').val() === "8" || $('#form-unit').val() === "9" || $('#form-unit').val() === "10") {
+            $('#square-image').css('background-image', 'url(/images/photos/hiace.jpg)')
+        };
+        if($('#form-unit').val() === "11" || $('#form-unit').val() === "12" || $('#form-unit').val() === "13" || $('#form-unit').val() === "14" || $('#form-unit').val() === "15" || $('#form-unit').val() === "16") {
+            $('#square-image').css('background-image', 'url(/images/photos/sprinter.jpg)')
         };
 
         // Formulas
@@ -72,6 +98,11 @@ $( document ).ready(function() {
             cars[unitIndex].prices[selectedZone - 1].roundtrip;
 
         price = parseInt(price);
+
+        if( $('#form-grocery').is(':checked') ) {
+            price = price + 50;
+        }
+
         pricenormal = price;
         // Outputs
         tax = Math.round(price * 0.08);
@@ -144,7 +175,8 @@ $( document ).ready(function() {
 
 
     // Binds
-    $("#form-unit, #form-hotel, #form-service").on("change", updatePrices);
+    $("#form-unit, #form-hotel, #form-service, #form-grocery").on("change", updatePrices);
+    $('.qtyplus, .qtyminus').on("click", updatePrices);
     var options = {
         url: '/json/transfers.json',
         getValue: 'name',

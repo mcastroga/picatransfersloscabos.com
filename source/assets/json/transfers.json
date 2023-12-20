@@ -63,13 +63,13 @@
   ],
   "hotel": [
     {
-      "logo": "images/icons/hotels/alegranza.jpg",
-      "name": "Alegranza",
+      "logo": "images/icons/hotels/barcelo-grand-faro.jpg",
+      "name": "Barcelo Grand Faro",
       "zone": 1
     },
     {
-      "logo": "images/icons/hotels/barcelo-grand-faro.jpg",
-      "name": "Barcelo Grand Faro",
+      "logo": "images/icons/hotels/bel-air-collection.jpg",
+      "name": "Bel Air Collection",
       "zone": 1
     },
     {
@@ -78,8 +78,8 @@
       "zone": 1
     },
     {
-      "logo": "images/icons/hotels/casa-costa-azul.jpg",
-      "name": "Casa Costa Azul",
+      "logo": "images/icons/hotels/cabo-surf.jpg",
+      "name": "Cabo Surf",
       "zone": 1
     },
     {
@@ -88,18 +88,23 @@
       "zone": 1
     },
     {
-      "logo": "images/icons/hotels/club-campestre-san-jose.jpg",
-      "name": "Club Campestre San Jose",
+      "logo": "images/icons/hotels/club-la-costa.jpg",
+      "name": "Club La Costa",
       "zone": 1
     },
     {
-      "logo": "images/icons/hotels/drift.jpg",
-      "name": "Drift",
+      "logo": "images/icons/hotels/worldmark-by-wyndham.jpg",
+      "name": "Coral Baja",
       "zone": 1
     },
     {
       "logo": "images/icons/hotels/encanto-inn.jpg",
-      "name": "Encanto Inn",
+      "name": "El Encanto Inn",
+      "zone": 1
+    },
+    {
+      "logo": "images/icons/hotels/el-zalate-condos.jpg",
+      "name": "El Zalate Condos",
       "zone": 1
     },
     {
@@ -118,6 +123,11 @@
       "zone": 1
     },
     {
+      "logo": "images/icons/hotels/posada-terranova.jpg",
+      "name": "Posada Terranova",
+      "zone": 1
+    },
+    {
       "logo": "images/icons/hotels/hyatt-place.jpg",
       "name": "Hyatt Place",
       "zone": 1
@@ -128,18 +138,38 @@
       "zone": 1
     },
     {
+      "logo": "images/icons/hotels/reflect-krystal-grand.jpg",
+      "name": "Reflect Los Cabos Resort",
+      "zone": 1
+    },
+    {
+      "logo": "images/icons/hotels/la-joya.jpg",
+      "name": "La Joya",
+      "zone": 1
+    },
+    {
       "logo": "images/icons/hotels/las-mananitas.jpg",
       "name": "Las Mañanitas",
       "zone": 1
     },
     {
+      "logo": "images/icons/hotels/las-olas-condos.jpg",
+      "name": "Las Olas Condos",
+      "zone": 1
+    },
+    {
       "logo": "images/icons/hotels/marisol-boutique.jpg",
-      "name": "Marisol Boutique",
+      "name": "Marisol Boutique Hotel",
       "zone": 1
     },
     {
       "logo": "images/icons/hotels/mykonos.jpg",
       "name": "Mykonos",
+      "zone": 1
+    },
+    {
+      "logo": "images/icons/hotels/mira-vista.jpg",
+      "name": "Mira Vista",
       "zone": 1
     },
     {
@@ -150,26 +180,6 @@
     {
       "logo": "images/icons/hotels/posada-real.jpg",
       "name": "Posada Real",
-      "zone": 1
-    },
-    {
-      "logo": "images/icons/hotels/posada-senor-manana.jpg",
-      "name": "Posada Señor Mañana",
-      "zone": 1
-    },
-    {
-      "logo": "images/icons/hotels/posada-terranova.jpg",
-      "name": "Posada Terranova",
-      "zone": 1
-    },
-    {
-      "logo": "images/icons/hotels/posada-yuca-inn.jpg",
-      "name": "Posada Yuca Inn",
-      "zone": 1
-    },
-    {
-      "logo": "images/icons/hotels/reflect-krystal-grand.jpg",
-      "name": "Reflect Krystal Grand Los Cabos",
       "zone": 1
     },
     {
@@ -213,14 +223,44 @@
       "zone": 1
     },
     {
-      "logo": "images/icons/hotels/viva-condos.jpg",
-      "name": "Viva Condos",
-      "zone": 1
+      "logo": "images/icons/hotels/acre.jpg",
+      "name": "Acre",
+      "zone": 2
     },
     {
-      "logo": "images/icons/hotels/worldmark-by-wyndham.jpg",
-      "name": "Worldmark Coral Baja",
-      "zone": 1
+      "logo": "images/icons/hotels/el-ganzo.jpg",
+      "name": "El Ganzo",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/jw-marriott.jpg",
+      "name": "JW Marriott",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/secrets-puerto-los-cabos.jpg",
+      "name": "Puerto Los Cabos Residential",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/secrets-puerto-los-cabos.jpg",
+      "name": "Puerto Los Cabos Villas",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/secrets-puerto-los-cabos.jpg",
+      "name": "Secrets Puerto Los Cabos",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/ritz-carlton.jpg",
+      "name": "Ritz-Carlton",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/zadun.jpg",
+      "name": "Zadun",
+      "zone": 2
     },
     {
       "logo": "images/icons/hotels/baja-point.jpg",
@@ -228,23 +268,33 @@
       "zone": 2
     },
     {
-      "logo": "images/icons/hotels/cabo-surf.jpg",
-      "name": "Cabo Surf",
+      "logo": "images/icons/hotels/casa-del-mar.jpg",
+      "name": "Casa del Mar",
       "zone": 2
     },
     {
-      "logo": "images/icons/hotels/casa-del-mar.jpg",
-      "name": "Casa del Mar",
-      "zone": 3
+      "logo": "images/icons/hotels/casa-florencia.jpg",
+      "name": "Casa Florencia",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/casa-los-amigos.jpg",
+      "name": "Casa Los Amigos",
+      "zone": 2
     },
     {
       "logo": "images/icons/hotels/chileno-bay.jpg",
       "name": "Chileno Bay",
-      "zone": 3
+      "zone": 2
     },
     {
       "logo": "images/icons/hotels/club-regina.jpg",
       "name": "Club Regina",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/club-regina.jpg",
+      "name": "Condominiums Las Ventanas",
       "zone": 2
     },
     {
@@ -258,21 +308,6 @@
       "zone": 2
     },
     {
-      "logo": "images/icons/hotels/el-ganzo.jpg",
-      "name": "El Ganzo",
-      "zone": 2
-    },
-    {
-      "logo": "images/icons/hotels/encanto-de-la-laguna.jpg",
-      "name": "Encanto de la Laguna",
-      "zone": 3
-    },
-    {
-      "logo": "images/icons/hotels/espiritu-del-mar.jpg",
-      "name": "Espiritu del Mar",
-      "zone": 2
-    },
-    {
       "logo": "images/icons/hotels/garza-blanca.jpg",
       "name": "Garza Blanca",
       "zone": 2
@@ -283,18 +318,8 @@
       "zone": 2
     },
     {
-      "logo": "images/icons/hotels/hampton-inn-suites.jpg",
-      "name": "Hampton Inn Suites",
-      "zone": 2
-    },
-    {
-      "logo": "images/icons/hotels/hilton.jpg",
-      "name": "Hilton",
-      "zone": 2
-    },
-    {
-      "logo": "images/icons/hotels/jw-marriott.jpg",
-      "name": "JW Marriott",
+      "logo": "images/icons/hotels/las-gardenias.jpg",
+      "name": "Las Gardenias",
       "zone": 2
     },
     {
@@ -308,8 +333,23 @@
       "zone": 2
     },
     {
+      "logo": "images/icons/hotels/hampton-inn-suites.jpg",
+      "name": "Hampton Inn Suites",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/hilton.jpg",
+      "name": "Hilton",
+      "zone": 2
+    },
+    {
       "logo": "images/icons/hotels/maravilla.jpg",
-      "name": "Maravilla",
+      "name": "Maravilla Los Cabos",
+      "zone": 2
+    },
+    {
+      "logo": "images/icons/hotels/mar-del-cabo.jpg",
+      "name": "Mar del Cabo",
       "zone": 2
     },
     {
@@ -333,38 +373,13 @@
       "zone": 2
     },
     {
-      "logo": "images/icons/hotels/ritz-carlton.jpg",
-      "name": "Ritz-Carlton",
-      "zone": 2
-    },
-    {
-      "logo": "images/icons/hotels/secrets-puerto-los-cabos.jpg",
-      "name": "Secrets Puerto Los Cabos",
-      "zone": 2
-    },
-    {
-      "logo": "images/icons/hotels/sheraton-hacienda-del-mar.jpg",
-      "name": "Sheraton Hacienda del Mar",
-      "zone": 3
-    },
-    {
       "logo": "images/icons/hotels/solaz.jpg",
       "name": "Solaz",
       "zone": 2
     },
     {
-      "logo": "images/icons/hotels/vievage.jpg",
-      "name": "Vievage",
-      "zone": 3
-    },
-    {
-      "logo": "images/icons/hotels/villa-valencia.jpg",
-      "name": "Villa Valencia",
-      "zone": 2
-    },
-    {
-      "logo": "images/icons/hotels/villas-del-mar.jpg",
-      "name": "Villas del Mar",
+      "logo": "images/icons/hotels/villa-la-valencia.jpg",
+      "name": "Villa La Valencia",
       "zone": 2
     },
     {
@@ -383,14 +398,13 @@
       "zone": 3
     },
     {
-      "logo": "images/icons/hotels/cabo-cush.jpg",
-      "name": "Cabo Cush",
+      "logo": "images/icons/hotels/bungalows.jpg",
+      "name": "Bungalows",
       "zone": 3
     },
-
     {
-      "logo": "images/icons/hotels/cabo-viejo.jpg",
-      "name": "Cabo Viejo",
+      "logo": "images/icons/hotels/cabo-del-sol.jpg",
+      "name": "Cabo del Sol",
       "zone": 3
     },
     {
@@ -399,18 +413,23 @@
       "zone": 3
     },
     {
+      "logo": "images/icons/hotels/cabo-vista.jpg",
+      "name": "Cabo Vista",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/casa-bella-boutique-hotel.jpg",
+      "name": "Casa Bella Boutique Hotel",
+      "zone": 3
+    },
+    {
       "logo": "images/icons/hotels/casa-dorada.jpg",
       "name": "Casa Dorada",
       "zone": 3
     },
     {
-      "logo": "images/icons/hotels/city-express-plus.jpg",
-      "name": "City Express Plus",
-      "zone": 3
-    },
-    {
-      "logo": "images/icons/hotels/city-express-suites.jpg",
-      "name": "City Express Suites",
+      "logo": "images/icons/hotels/casa-pablito.jpg",
+      "name": "Casa Pablito",
       "zone": 3
     },
     {
@@ -419,8 +438,8 @@
       "zone": 3
     },
     {
-      "logo": "images/icons/hotels/comfort-inn.jpg",
-      "name": "Comfort Inn",
+      "logo": "images/icons/hotels/sheraton-hacienda-del-mar.jpg",
+      "name": "Club Hacienda del Mar",
       "zone": 3
     },
     {
@@ -431,11 +450,6 @@
     {
       "logo": "images/icons/hotels/esperanza-an-auberge.jpg",
       "name": "Esperanza An Auberge",
-      "zone": 3
-    },
-    {
-      "logo": "images/icons/hotels/estancia-real.jpg",
-      "name": "Estancia Real",
       "zone": 3
     },
     {
@@ -456,7 +470,7 @@
     {
       "logo": "images/icons/hotels/hacienda-beach-club.jpg",
       "name": "Hacienda Beach Club",
-      "zone": 6
+      "zone": 3
     },
     {
       "logo": "images/icons/hotels/hacienda-encantada.jpg",
@@ -469,8 +483,23 @@
       "zone": 3
     },
     {
+      "logo": "images/icons/hotels/hotel-castillo-blarney.jpg",
+      "name": "Hotel Catillo Blarney",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/los-milagros.jpg",
+      "name": "Las Ventanas Residential",
+      "zone": 3
+    },
+    {
       "logo": "images/icons/hotels/los-cabos-golf-resort.jpg",
       "name": "Los Cabos Golf Resort",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/los-milagros.jpg",
+      "name": "Los Milagros",
       "zone": 3
     },
     {
@@ -479,8 +508,8 @@
       "zone": 3
     },
     {
-      "logo": "images/icons/hotels/mar-del-cabo.jpg",
-      "name": "Mar del Cabo",
+      "logo": "images/icons/hotels/mar-de-cortez.jpg",
+      "name": "Mar de Cortez",
       "zone": 3
     },
     {
@@ -509,13 +538,13 @@
       "zone": 3
     },
     {
-      "logo": "images/icons/hotels/montage.jpg",
-      "name": "Montage",
+      "logo": "images/icons/hotels/playa-grande.jpg",
+      "name": "Playa Grande",
       "zone": 3
     },
     {
-      "logo": "images/icons/hotels/playa-grande.jpg",
-      "name": "Playa Grande",
+      "logo": "images/icons/hotels/portofino.jpg",
+      "name": "Portofino",
       "zone": 3
     },
     {
@@ -529,8 +558,33 @@
       "zone": 3
     },
     {
+      "logo": "images/icons/hotels/puerta-cabos-village.jpg",
+      "name": "Puerta Cabos Village",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/puerta-del-sol.jpg",
+      "name": "Puerta del Sol",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/punta-ballena-residential.jpg",
+      "name": "Punta Ballena Residential",
+      "zone": 3
+    },
+    {
       "logo": "images/icons/hotels/quintas-del-sol.jpg",
       "name": "Quintas del Sol",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/residential-cabo-san-lucas-inn.jpg",
+      "name": "Residential Cabo San Lucas Inn",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/riu-baja-california.jpg",
+      "name": "Riu Baja California",
       "zone": 3
     },
     {
@@ -554,13 +608,28 @@
       "zone": 3
     },
     {
+      "logo": "images/icons/hotels/sheraton-hacienda-del-mar.jpg",
+      "name": "Sheraton Hacienda del Mar",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/siesta-suites-hotel.jpg",
+      "name": "Siesta Suites Hotel",
+      "zone": 3
+    },
+    {
       "logo": "images/icons/hotels/sirena-del-mar.jpg",
       "name": "Sirena del Mar",
-      "zone": 2
+      "zone": 3
     },
     {
       "logo": "images/icons/hotels/runrock-condo.jpg",
       "name": "Sunrock Condo",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/terrasol.jpg",
+      "name": "Terrasol",
       "zone": 3
     },
     {
@@ -589,6 +658,16 @@
       "zone": 3
     },
     {
+      "logo": "images/icons/hotels/vista-encantada.jpg",
+      "name": "Vista Encantada",
+      "zone": 3
+    },
+    {
+      "logo": "images/icons/hotels/vista-vela.jpg",
+      "name": "Vista Vela",
+      "zone": 3
+    },
+    {
       "logo": "images/icons/hotels/waldorf-astoria-at-pedregal.jpg",
       "name": "Waldorf Astoria at Pedregal",
       "zone": 3
@@ -604,9 +683,14 @@
       "zone": 4
     },
     {
+      "logo": "images/icons/hotels/coronado.jpg",
+      "name": "Coronado",
+      "zone": 4
+    },
+    {
       "logo": "images/icons/hotels/diamante-cabo-san-lucas.jpg",
       "name": "Diamante Cabo San Lucas",
-      "zone": 5
+      "zone": 4
     },
     {
       "logo": "images/icons/hotels/grand-solmar-at-rancho.jpg",
@@ -616,7 +700,7 @@
     {
       "logo": "images/icons/hotels/hard-rock-hotel.jpg",
       "name": "Hard Rock Hotel",
-      "zone": 5
+      "zone": 4
     },
     {
       "logo": "images/icons/hotels/montecristo-estates.jpg",
@@ -625,17 +709,17 @@
     },
     {
       "logo": "images/icons/hotels/nobu.jpg",
-      "name": "Nobu",
-      "zone": 5
-    },
-    {
-      "logo": "images/icons/hotels/nova-hispania.jpg",
-      "name": "Nova Hispania",
+      "name": "Nobu Hotel",
       "zone": 4
     },
     {
       "logo": "images/icons/hotels/pedregal-cabo-san-lucas.jpg",
       "name": "Pedregal Cabo San Lucas",
+      "zone": 4
+    },
+    {
+      "logo": "images/icons/hotels/portofino.jpg",
+      "name": "Portofino Condos",
       "zone": 4
     },
     {
@@ -656,12 +740,12 @@
   ],
   "units": [
     {
-      "name": "1 passanger",
+      "name": "1",
       "capacity": 1,
       "prices": [
         {
           "zone": 1,
-          "oneway": 60,
+          "oneway": 65,
           "roundtrip": 120
         },
         {
@@ -672,7 +756,7 @@
         {
           "zone": 3,
           "oneway": 85,
-          "roundtrip": 150
+          "roundtrip": 160
         },
         {
           "zone": 4,
@@ -682,12 +766,12 @@
       ]
     },
     {
-      "name": "2 passangers",
+      "name": "2",
       "capacity": 2,
       "prices": [
         {
           "zone": 1,
-          "oneway": 70,
+          "oneway": 65,
           "roundtrip": 120
         },
         {
@@ -697,101 +781,101 @@
         },
         {
           "zone": 3,
-          "oneway": 80,
-          "roundtrip": 150
-        },
-        {
-          "zone": 4,
-          "oneway": 100,
-          "roundtrip": 180
-        }
-      ]
-    },
-    {
-      "name": "3 passangers",
-      "capacity": 3,
-      "prices": [
-        {
-          "zone": 1,
-          "oneway": 70,
-          "roundtrip": 120
-        },
-        {
-          "zone": 2,
-          "oneway": 75,
-          "roundtrip": 140
-        },
-        {
-          "zone": 3,
-          "oneway": 80,
-          "roundtrip": 150
-        },
-        {
-          "zone": 4,
-          "oneway": 100,
-          "roundtrip": 180
-        }
-      ]
-    },
-    {
-      "name": "4 passangers",
-      "capacity": 4,
-      "prices": [
-        {
-          "zone": 1,
-          "oneway": 70,
-          "roundtrip": 120
-        },
-        {
-          "zone": 2,
-          "oneway": 75,
-          "roundtrip": 140
-        },
-        {
-          "zone": 3,
-          "oneway": 80,
-          "roundtrip": 150
-        },
-        {
-          "zone": 4,
-          "oneway": 100,
-          "roundtrip": 180
-        }
-      ]
-    },
-    {
-      "name": "5 passangers",
-      "capacity": 5,
-      "prices": [
-        {
-          "zone": 1,
-          "oneway": 80,
-          "roundtrip": 140
-        },
-        {
-          "zone": 2,
           "oneway": 85,
           "roundtrip": 160
         },
         {
-          "zone": 3,
-          "oneway": 90,
-          "roundtrip": 170
-        },
-        {
           "zone": 4,
-          "oneway": 110,
-          "roundtrip": 200
+          "oneway": 95,
+          "roundtrip": 180
         }
       ]
     },
     {
-      "name": "6 passangers",
+      "name": "3",
+      "capacity": 3,
+      "prices": [
+        {
+          "zone": 1,
+          "oneway": 65,
+          "roundtrip": 120
+        },
+        {
+          "zone": 2,
+          "oneway": 75,
+          "roundtrip": 140
+        },
+        {
+          "zone": 3,
+          "oneway": 85,
+          "roundtrip": 160
+        },
+        {
+          "zone": 4,
+          "oneway": 95,
+          "roundtrip": 180
+        }
+      ]
+    },
+    {
+      "name": "4",
+      "capacity": 4,
+      "prices": [
+        {
+          "zone": 1,
+          "oneway": 65,
+          "roundtrip": 120
+        },
+        {
+          "zone": 2,
+          "oneway": 75,
+          "roundtrip": 140
+        },
+        {
+          "zone": 3,
+          "oneway": 85,
+          "roundtrip": 160
+        },
+        {
+          "zone": 4,
+          "oneway": 95,
+          "roundtrip": 180
+        }
+      ]
+    },
+    {
+      "name": "5",
+      "capacity": 5,
+      "prices": [
+        {
+          "zone": 1,
+          "oneway": 65,
+          "roundtrip": 120
+        },
+        {
+          "zone": 2,
+          "oneway": 75,
+          "roundtrip": 140
+        },
+        {
+          "zone": 3,
+          "oneway": 85,
+          "roundtrip": 160
+        },
+        {
+          "zone": 4,
+          "oneway": 95,
+          "roundtrip": 180
+        }
+      ]
+    },
+    {
+      "name": "6",
       "capacity": 6,
       "prices": [
         {
           "zone": 1,
-          "oneway": 90,
+          "oneway": 85,
           "roundtrip": 160
         },
         {
@@ -801,49 +885,127 @@
         },
         {
           "zone": 3,
-          "oneway": 100,
-          "roundtrip": 190
+          "oneway": 105,
+          "roundtrip": 200
         },
         {
           "zone": 4,
-          "oneway": 120,
+          "oneway": 115,
           "roundtrip": 220
         }
       ]
     },
     {
-      "name": "7 passangers",
+      "name": "7",
       "capacity": 7,
       "prices": [
         {
           "zone": 1,
-          "oneway": 100,
-          "roundtrip": 180
+          "oneway": 85,
+          "roundtrip": 160
         },
         {
           "zone": 2,
+          "oneway": 95,
+          "roundtrip": 180
+        },
+        {
+          "zone": 3,
           "oneway": 105,
           "roundtrip": 200
         },
         {
-          "zone": 3,
-          "oneway": 110,
-          "roundtrip": 210
-        },
-        {
           "zone": 4,
-          "oneway": 130,
-          "roundtrip": 240
+          "oneway": 115,
+          "roundtrip": 220
         }
       ]
     },
     {
-      "name": "8 passangers",
+      "name": "8",
       "capacity": 8,
       "prices": [
         {
           "zone": 1,
-          "oneway": 110,
+          "oneway": 85,
+          "roundtrip": 160
+        },
+        {
+          "zone": 2,
+          "oneway": 95,
+          "roundtrip": 180
+        },
+        {
+          "zone": 3,
+          "oneway": 105,
+          "roundtrip": 200
+        },
+        {
+          "zone": 4,
+          "oneway": 115,
+          "roundtrip": 220
+        }
+      ]
+    },
+    {
+      "name": "9",
+      "capacity": 9,
+      "prices": [
+        {
+          "zone": 1,
+          "oneway": 85,
+          "roundtrip": 160
+        },
+        {
+          "zone": 2,
+          "oneway": 95,
+          "roundtrip": 180
+        },
+        {
+          "zone": 3,
+          "oneway": 105,
+          "roundtrip": 200
+        },
+        {
+          "zone": 4,
+          "oneway": 115,
+          "roundtrip": 220
+        }
+      ]
+    },
+    {
+      "name": "10",
+      "capacity": 10,
+      "prices": [
+        {
+          "zone": 1,
+          "oneway": 85,
+          "roundtrip": 160
+        },
+        {
+          "zone": 2,
+          "oneway": 95,
+          "roundtrip": 180
+        },
+        {
+          "zone": 3,
+          "oneway": 105,
+          "roundtrip": 200
+        },
+        {
+          "zone": 4,
+          "oneway": 115,
+          "roundtrip": 220
+        }
+      ]
+    },
+    {
+      "name": "11",
+      "capacity": 11,
+      "prices": [
+        {
+          "zone": 1,
+          "oneway": 105,
           "roundtrip": 200
         },
         {
@@ -853,221 +1015,143 @@
         },
         {
           "zone": 3,
-          "oneway": 120,
-          "roundtrip": 230
-        },
-        {
-          "zone": 4,
-          "oneway": 140,
-          "roundtrip": 260
-        }
-      ]
-    },
-    {
-      "name": "9 passangers",
-      "capacity": 9,
-      "prices": [
-        {
-          "zone": 1,
-          "oneway": 120,
-          "roundtrip": 220
-        },
-        {
-          "zone": 2,
           "oneway": 125,
           "roundtrip": 240
         },
         {
-          "zone": 3,
-          "oneway": 130,
-          "roundtrip": 250
-        },
-        {
           "zone": 4,
-          "oneway": 150,
-          "roundtrip": 280
-        }
-      ]
-    },
-    {
-      "name": "10 passangers",
-      "capacity": 10,
-      "prices": [
-        {
-          "zone": 1,
-          "oneway": 130,
-          "roundtrip": 240
-        },
-        {
-          "zone": 2,
           "oneway": 135,
           "roundtrip": 260
-        },
-        {
-          "zone": 3,
-          "oneway": 140,
-          "roundtrip": 270
-        },
-        {
-          "zone": 4,
-          "oneway": 160,
-          "roundtrip": 300
         }
       ]
     },
     {
-      "name": "11 passangers",
-      "capacity": 11,
-      "prices": [
-        {
-          "zone": 1,
-          "oneway": 140,
-          "roundtrip": 260
-        },
-        {
-          "zone": 2,
-          "oneway": 145,
-          "roundtrip": 280
-        },
-        {
-          "zone": 3,
-          "oneway": 150,
-          "roundtrip": 290
-        },
-        {
-          "zone": 4,
-          "oneway": 170,
-          "roundtrip": 320
-        }
-      ]
-    },
-    {
-      "name": "12 passangers",
+      "name": "12",
       "capacity": 12,
       "prices": [
         {
           "zone": 1,
-          "oneway": 150,
-          "roundtrip": 280
+          "oneway": 105,
+          "roundtrip": 200
         },
         {
           "zone": 2,
-          "oneway": 155,
-          "roundtrip": 300
+          "oneway": 115,
+          "roundtrip": 220
         },
         {
           "zone": 3,
-          "oneway": 160,
-          "roundtrip": 310
+          "oneway": 125,
+          "roundtrip": 240
         },
         {
           "zone": 4,
-          "oneway": 180,
-          "roundtrip": 340
+          "oneway": 135,
+          "roundtrip": 260
         }
       ]
     },
     {
-      "name": "13 passangers",
+      "name": "13",
       "capacity": 13,
       "prices": [
         {
           "zone": 1,
-          "oneway": 160,
-          "roundtrip": 300
+          "oneway": 105,
+          "roundtrip": 200
         },
         {
           "zone": 2,
-          "oneway": 165,
-          "roundtrip": 320
+          "oneway": 115,
+          "roundtrip": 220
         },
         {
           "zone": 3,
-          "oneway": 170,
-          "roundtrip": 330
+          "oneway": 125,
+          "roundtrip": 240
         },
         {
           "zone": 4,
-          "oneway": 190,
-          "roundtrip": 360
+          "oneway": 135,
+          "roundtrip": 260
         }
       ]
     },
     {
-      "name": "14 passangers",
+      "name": "14",
       "capacity": 14,
       "prices": [
         {
           "zone": 1,
-          "oneway": 170,
-          "roundtrip": 320
+          "oneway": 105,
+          "roundtrip": 200
         },
         {
           "zone": 2,
-          "oneway": 175,
-          "roundtrip": 340
+          "oneway": 115,
+          "roundtrip": 220
         },
         {
           "zone": 3,
-          "oneway": 180,
-          "roundtrip": 350
+          "oneway": 125,
+          "roundtrip": 240
         },
         {
           "zone": 4,
-          "oneway": 200,
-          "roundtrip": 380
+          "oneway": 135,
+          "roundtrip": 260
         }
       ]
     },
     {
-      "name": "15 passangers",
+      "name": "15",
       "capacity": 15,
       "prices": [
         {
           "zone": 1,
-          "oneway": 180,
-          "roundtrip": 340
+          "oneway": 105,
+          "roundtrip": 200
         },
         {
           "zone": 2,
-          "oneway": 185,
-          "roundtrip": 360
+          "oneway": 115,
+          "roundtrip": 220
         },
         {
           "zone": 3,
-          "oneway": 190,
-          "roundtrip": 370
+          "oneway": 125,
+          "roundtrip": 240
         },
         {
           "zone": 4,
-          "oneway": 210,
-          "roundtrip": 400
+          "oneway": 135,
+          "roundtrip": 260
         }
       ]
     },
     {
-      "name": "16 passangers",
+      "name": "16",
       "capacity": 16,
       "prices": [
         {
           "zone": 1,
-          "oneway": 190,
-          "roundtrip": 360
+          "oneway": 105,
+          "roundtrip": 200
         },
         {
           "zone": 2,
-          "oneway": 195,
-          "roundtrip": 380
+          "oneway": 115,
+          "roundtrip": 220
         },
         {
           "zone": 3,
-          "oneway": 200,
-          "roundtrip": 390
+          "oneway": 125,
+          "roundtrip": 240
         },
         {
           "zone": 4,
-          "oneway": 220,
-          "roundtrip": 420
+          "oneway": 135,
+          "roundtrip": 260
         }
       ]
     }
