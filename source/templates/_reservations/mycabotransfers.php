@@ -77,20 +77,24 @@
                     <div class="row" id="step-3">
                         <form class="col-sm-12">
                             <div class="info info-container">
-                                <div class="col-12">
-                                    <h4>STEP 2 - Add your information</h4>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4>STEP 2 - Add your information</h4>
+                                    </div>
                                 </div>
-                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <label>Full Name</label>
-                                    <input id="form-name" type="text" name="name"/>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <label>Email</label>
-                                    <input id="form-email" type="text" name="email"/>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <label>Phone</label>
-                                    <input id="form-phone" type="number" name="phone"/>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <label>Full Name</label>
+                                        <input id="form-name" type="text" name="name"/>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <label>Email</label>
+                                        <input id="form-email" type="text" name="email"/>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <label>Phone</label>
+                                        <input id="form-phone" type="number" name="phone"/>
+                                    </div>
                                 </div>
                                 <div id="arrival" class="row">
                                     <div class="col-12">
@@ -271,33 +275,31 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8">
                 <div class="border-card">
                     <div id="square-image">
-                        <div class="info special">
-                            <div class="text">
-                                <h4>Booking Information</h4>
-                                <div class="info-row">
-                                    <h6>Pax</h6>
-                                    <p id="vehicleselected">1 passenger</p>
-                                </div>
-                                <div class="info-row">
-                                    <h6>Hotel</h6>
-                                    <p id="hotelselected"></p>
-                                </div>
-                                <div class="info-row">
-                                    <h6>Service</h6>
-                                    <p id="serviceselected"></p>
-                                </div><br/>
-                                <div class="info-row">
-                                    <h6>Total</h6>
-                                    <p ></p>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="/images/photos/suburban.png" />
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="border-card">
-                    <div class="square-review"></div>
+            <div class="col-12">
+                <div class="info special">
+                    <div class="text">
+                        <h4>Booking Information</h4>
+                        <div class="info-row">
+                            <h6>Pax</h6>
+                            <p id="vehicleselected">1 passenger</p>
+                        </div>
+                        <div class="info-row">
+                            <h6>Hotel</h6>
+                            <p id="hotelselected"></p>
+                        </div>
+                        <div class="info-row">
+                            <h6>Service</h6>
+                            <p id="serviceselected"></p>
+                        </div><br/>
+                        <div class="info-row">
+                            <h6>Total</h6>
+                            <p ></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

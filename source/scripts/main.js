@@ -83,13 +83,13 @@ $( document ).ready(function() {
         };
 
         if($('#form-unit').val() === "1" || $('#form-unit').val() === "2" || $('#form-unit').val() === "3" || $('#form-unit').val() === "4" || $('#form-unit').val() === "5") {
-            $('#square-image').css('background-image', 'url("/images/photos/suburban.jpg")')
+            $('#square-image img').attr('src', '/images/photos/suburban.png')
         };
         if($('#form-unit').val() === "6" || $('#form-unit').val() === "7" || $('#form-unit').val() === "8" || $('#form-unit').val() === "9" || $('#form-unit').val() === "10") {
-            $('#square-image').css('background-image', 'url(/images/photos/hiace.jpg)')
+            $('#square-image img').attr('src', '/images/photos/hiace.png')
         };
         if($('#form-unit').val() === "11" || $('#form-unit').val() === "12" || $('#form-unit').val() === "13" || $('#form-unit').val() === "14" || $('#form-unit').val() === "15" || $('#form-unit').val() === "16") {
-            $('#square-image').css('background-image', 'url(/images/photos/sprinter.jpg)')
+            $('#square-image img').attr('src', '/images/photos/sprinter.png')
         };
 
         // Formulas
