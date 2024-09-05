@@ -44,9 +44,9 @@ $( document ).ready(function() {
 
     // STEP 2
 
-    $("#send-prebook").on("click", function() {
-        $("#step-2").css("display", "none");
-        $("#step-3").css("display", "block");
+    $("#send-step-1").on("click", function() {
+        $("#step-1").css("display", "none");
+        $("#step-2").css("display", "block");
         $("#arrival").show();
         $("#selector-step-1").removeClass('selected');
         $("#selector-step-2").addClass('selected');
@@ -55,9 +55,9 @@ $( document ).ready(function() {
         };
     });
 
-    $("#send-book").on("click", function() {
-        $("#step-4").css("display", "block");
-        $("#step-3").css("display", "none");
+    $("#send-step-2").on("click", function() {
+        $("#step-3").css("display", "block");
+        $("#step-2").css("display", "none");
     });
 
     function updatePrices(event) {
@@ -67,7 +67,7 @@ $( document ).ready(function() {
         var unitIndex = getPosition(selectedUnit);
 
         // Early checks
-        $( "#send-prebook" ).attr('disabled', 'disabled');
+        $( "#send-step-1" ).attr('disabled', 'disabled');
         if (unitIndex < 0 || selectedUnit === "false" || selectedZone  === "false") return;
 
         if ($("#form-service").val() === "Round Trip") {
@@ -118,10 +118,10 @@ $( document ).ready(function() {
         $("#priceTotal").html( `$ ${pricetotal} USD` );
         $("#price-paypal").val( pricetotal );
         $("#paypal-button-container").val( pricetotal );
-        $("#send-prebook").removeAttr('disabled');
+        $("#send-step-1").removeAttr('disabled');
     }
 
-    $("#send-mail").on("click", function(e) {
+    $("#send-step-3").on("click", function(e) {
         e.preventDefault();
 
         if ($("#form-name").val().trim().length < 4) {

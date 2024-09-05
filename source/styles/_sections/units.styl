@@ -2,14 +2,13 @@ section#units
   background-color #fff
   padding 30px 0
 
-  h2
+  h3
     color: #000;
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 30px;
     margin-bottom: 20px;
   p
     color: #000;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
     text-align: justify;
@@ -19,3 +18,106 @@ section#units
       font-size 30px
     p
       font-size 22px
+
+section#zones
+  background $backgroundColor1
+  padding 50px 0
+
+  h3
+    color $textColorh1
+    display block
+    font-family "Archivo Black", arial, sans-serif
+    font-size 33px
+    font-weight 400
+    margin-block-end 24px
+    margin-block-start 0px
+    margin-bottom 24px
+    margin-inline-end 0px
+    margin-inline-start 0px
+    margin-left 0px
+    margin-right 0px
+    margin-top 0px
+    max-width 100%
+    text-transform uppercase
+
+  .zone-1
+    background #556f7b
+  .zone-2
+    background #556f7b
+  .zone-3
+    background #556f7b
+  .zone-4
+    background #556f7b
+
+  .card
+    border 0
+    border-radius 0
+    overflow hidden
+
+    .card-header
+      border-radius 0
+      .card-title
+        align-items center
+        display flex
+        font-size 22px
+        justify-content center
+        margin 0
+        width 100%
+      .card-text
+        font-size 18px
+    .card-footer
+      background #fff
+
+      button
+        border 0
+        border-radius 0
+        color #fff
+        text-transform uppercase
+
+      button:hover
+        background-color #fff
+        color #000
+
+  .hotel-card
+    border 1px solid #000
+    border-radius 4px
+    margin 2px
+    overflow hidden
+    padding 0
+    width 100px
+
+    p
+      display block
+      font-size 12px
+      height 40px
+      margin 0
+      overflow hidden
+      padding 0
+      width 100%
+
+  .modal-footer
+    button
+      border 0
+      border-radius 0
+      text-transform uppercase
+
+@media (max-width: 1399px)
+  section#zones
+    .card-header
+      .card-title
+        height 82px
+
+@media (max-width: 767px)
+  section#zones
+    .col-12
+      margin-bottom 30px
+
+@media (max-width: 540px)
+  section#zones
+    .card-header
+      .card-title
+        height 32px
+        br
+          display none
+    .col
+      width 100%
