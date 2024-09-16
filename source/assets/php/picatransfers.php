@@ -25,11 +25,11 @@ $destination              = $_POST["destination"] ;
 $pricenormal              = $_POST["price-normal"];
 $reservation              = rand(1,100);
 
-$headers .= "From: sistema@bogartransportationservices.com\r\n";
+$headers .= "From: sistema@picatransfersloscabos.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-$to = "bogartransportation@gmail.com, $email";
-$subject = "Reservation #BTS-$arrivaldate-$reservation from Bogar Transportation Services";
+$to = "picatransfersloscabos@gmail.com, $email";
+$subject = "Reservation #PTC-$arrivaldate-$reservation from Pica Transfers Los Cabos";
 $validationOK=true;
 
 if ($validationOK) {

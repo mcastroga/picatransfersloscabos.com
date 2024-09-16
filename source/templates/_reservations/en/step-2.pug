@@ -25,7 +25,18 @@
           input#form-arrival-time(type="time" name="arrivaltime")
         .col-12.col-sm-6.col-md-6.col-lg-6
           label Airline
-          input#form-arrival-airline(type="text")
+          select#form-arrival-airline
+            option(name="arrivalairline" value="Aeromexico") Aeromexico
+            option(name="arrivalairline" value="Alaska Airlines") Alaska Airlines
+            option(name="arrivalairline" value="American Airlines") American Airlines
+            option(name="arrivalairline" value="Delta Airlines") Delta Airlines
+            option(name="arrivalairline" value="JetBlue") JetBlue
+            option(name="arrivalairline" value="Southwest") Southwest
+            option(name="arrivalairline" value="Spirit") Spirit
+            option(name="arrivalairline" value="United Airlines") United Airlines
+            option(name="arrivalairline" value="Viva Aerobus") Viva Aerobus
+            option(name="arrivalairline" value="Volaris") Volaris
+            option(name="arrivalairline" value="WestJet") WestJet
         .col-12.col-sm-6.col-md-6.col-lg-6
           label Flight #
           input#form-arrival-flight(type="text" name="arrivalflight" placeholder="Flight")
@@ -40,7 +51,18 @@
           input#form-departure-time(type="time" name="departuretime")
         .col-12.col-sm-6.col-md-6.col-lg-6
           label Airline
-          input#form-departure-airline(type="text")
+          select#form-departure-airline
+            option(name="departureairline" value="Aeromexico") Aeromexico
+            option(name="departureairline" value="Alaska Airlines") Alaska Airlines
+            option(name="departureairline" value="American Airlines") American Airlines
+            option(name="departureairline" value="Delta Airlines") Delta Airlines
+            option(name="departureairline" value="JetBlue") JetBlue
+            option(name="departureairline" value="Southwest") Southwest
+            option(name="departureairline" value="Spirit") Spirit
+            option(name="departureairline" value="United Airlines") United Airlines
+            option(name="departureairline" value="Viva Aerobus") Viva Aerobus
+            option(name="departureairline" value="Volaris") Volaris
+            option(name="departureairline" value="WestJet") WestJet
         .col-12.col-sm-6.col-md-6.col-lg-6
           label Flight #
           input#form-departure-flight(type="text" name="departureflight" placeholder="Flight")
