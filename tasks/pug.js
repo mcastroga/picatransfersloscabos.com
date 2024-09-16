@@ -10,9 +10,9 @@ gulp.task('pug', function() {
             pretty: true
         }))
         .pipe(gulp.dest("./website/"));
-    gulp.src("source/templates/adminpanel/reservations.pug")
+    gulp.src("source/templates/inicio.pug")
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest("./website/adminpanel/"));
+        .pipe(gulp.dest("./website/"));
 });

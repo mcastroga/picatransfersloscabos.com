@@ -1,0 +1,52 @@
+#step-2.row
+  form.col-sm-12
+    .info.info-container
+      .row
+        .col-12
+          h4 PASO 2 - Añade tu información
+      .row
+        .col-12.col-sm-12.col-md-12.col-lg-6
+          label Nombre completo
+          input#form-name(type="text" name="name")
+        .col-12.col-sm-12.col-md-12.col-lg-6
+          label Correo
+          input#form-email(type="text" name="email")
+        .col-12.col-sm-12.col-md-12.col-lg-6
+          label Telefono
+          input#form-phone(type="number" name="phone")
+      #arrival.row
+        .col-12
+          p Información de llegada
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Fecha
+          input#form-arrival-date(type="date" name="arrivaldate")
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Hora
+          input#form-arrival-time(type="time" name="arrivaltime")
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Aerolinea
+          input#form-arrival-airline(type="text")
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Vuelo #
+          input#form-arrival-flight(type="text" name="arrivalflight" placeholder="Flight")
+      #departure.row
+        .col-12
+          p Información de salida
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Fecha
+          input#form-departure-date(type="date" name="departuredate")
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Hora
+          input#form-departure-time(type="time" name="departuretime")
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Aerolinea
+          input#form-departure-airline(type="text")
+        .col-12.col-sm-6.col-md-6.col-lg-6
+          label Vuelo #
+          input#form-departure-flight(type="text" name="departureflight" placeholder="Flight")
+      .row
+        .col-12
+          label Requisitos
+          input#form-comment(name="comments" type="text" placeholder="Baby seat, booster seat, grocery stop, etc")
+        .col-sm-12
+          input#send-step-2.submit-button(type="button" name="SEND" value="Check & Continuar")

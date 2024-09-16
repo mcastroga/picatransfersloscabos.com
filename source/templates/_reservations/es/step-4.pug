@@ -1,0 +1,72 @@
+#step-4.row
+  .col-sm-12
+    .info.info-container
+      .col-12
+        h4 PASO 4 - Escoge tu metodo de pago
+      .col-12
+        h4.text-center Gracias por escogernos!
+        p.text-center Puede pagar en efectivo cuando llegue a bordo de nuestra unidad o pagar ahora en PayPal.
+        br
+      .row
+        .col-sm-6.text-center
+          p
+            strong PAGAR EN EFECTIVO
+          .row
+            .col-sm-12.d-flex.align-items-center
+              img.margin-right-10(src='/images/icons/extra.svg' height='16px')
+              p Extras
+          #grocery-stop-cash.row
+            .col-sm-6.d-flex.align-items-center
+              img.margin-right-10(src='/images/icons/grocery.svg' height='16px')
+              p
+                i Parada de compras
+            .col-sm-6.text-left
+              p#grocery-cash    
+          .row
+            .col-sm-6.text-left
+              p
+                strong Total
+            .col-sm-6.text-left
+              p
+                strong#price-cash        
+        .col-sm-6.text-center
+          p
+            strong PAGAR EN PAYPAL
+          .row
+            .col-sm-12.d-flex.align-items-center
+              img.margin-right-10(src='/images/icons/extra.svg' height='16px')
+              p Extras
+          #grocery-stop-paypal.row
+            .col-sm-6.d-flex.align-items-center
+              img.margin-right-10(src='/images/icons/grocery.svg' height='16px')
+              p
+                i Parada de compras
+            .col-sm-6.text-left
+              p#grocery-paypal
+          .row
+            .col-sm-6.d-flex.align-items-center
+              img.margin-right-10(src='/images/icons/tax.svg' height='16px')
+              p Impuestos
+            .col-6
+              p#selectedTax
+          .row
+            .col-sm-6.text-left
+              p
+                strong Total
+            .col-sm-6
+              p
+                strong#priceTotal
+          .row
+            .col-12
+              form#paypalform(action='https://www.paypal.com/mx/cgi-bin/webscr' method='post' name='paypalform')
+                input(type='hidden' name='cmd' value='_xclick')
+                input(type='hidden' name='business' value='picatransfers.loscabos@gmail.com')
+                input(type='hidden' name='item_name' value='Tours')
+                input(type='hidden' name='currency_code' value='USD')
+                input(type='hidden' name='rm' value='2')
+                input(type='hidden' name='return' value='http://picatransferloscabos.com')
+                input(type='hidden' name='notify_url' value='http://picatransferloscabos.com')
+                input#item_number(type='hidden' name='item_number' value='')
+                input#price-paypal(type='hidden' name='amount' value='')
+                input.margin-top-20(type='image' src='https://www.paypalobjects.com/es_XC/i/btn/btn_paynow_LG.gif' name='submit' alt="Make payments with PayPal - it's fast, free and secure!")
+                img(alt='' border='0' src='https://www.paypalobjects.com/es_XC/i/scr/pixel.gif' width='1' height='1')

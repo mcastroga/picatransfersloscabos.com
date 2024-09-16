@@ -100,7 +100,7 @@ $( document ).ready(function() {
         price = parseInt(price);
 
         if( $('#form-grocery').is(':checked') ) {
-            price = price + 50;
+            price = price + 30;
         }
 
         pricenormal = price;
@@ -158,7 +158,8 @@ $( document ).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: '/php/picatransferloscabos.php',
+            url: 'https://mailer.hnb.mx/picatransfersloscabos.php',
+            //url: "https:/picatransferloscabos.php",
             dataType: "json",
             data: formData,
             success: function(response) {

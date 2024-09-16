@@ -1,0 +1,44 @@
+#step-1.row
+  form.col-sm-12
+    .info.info-container
+      .row
+        .col-12
+          h4 PASO 1 - Elige tu destino
+        .col-12
+          label.zindex9 Hotel
+          input#form-hotel(name="Hotel" placeholder="Select your hotel")
+        .col-12
+          label Service
+          select#form-service(name="Service")
+            option(data="One Way" value="One Way") Solo ida
+            option(data="Round Trip" value="Round Trip") Ida y vuelta
+        .col-12
+          label Pasajeros
+          .d-flex
+            .qtyminus -
+            input#form-unit(name='1' type='text' value='1' readonly)
+            .qtyplus +
+        #only-oneway.col-12
+          label Arranque
+          select#form-destination(name="Destination")
+            option(data="Airport - Hotel" value="Airport - Hotel") Del aeropuerto al hotel
+            option(data="Hotel - Airport" value="Hotel - Airport") Del hotel al aeropuerto
+                          
+        #capacity-shuttle.col-12
+          label Pax
+          select#form-passengers-shuttle
+            option(name="passengers" value="1") 1 Pasajero
+            option(name="passengers" value="2") 2 Pasajeros
+            option(name="passengers" value="3") 3 Pasajeros
+            option(name="passengers" value="4") 4 Pasajeros
+            option(name="passengers" value="5") 5 Pasajeros
+            option(name="passengers" value="6") 6 Pasajeros
+            option(name="passengers" value="7") 7 Pasajeros
+            option(name="passengers" value="8") 8 Pasajeros
+            option(name="passengers" value="9") 9 Pasajeros
+            option(name="passengers" value="10") 10 Pasajeros
+            option(name="passengers" value="11") 11 Pasajeros
+            option(name="passengers" value="12") 12 Pasajeros
+                              
+        .col-sm-12
+          input#send-step-1.submit-button(type="button", name="SEND", value="Check & Continuar", disabled="disabled")
