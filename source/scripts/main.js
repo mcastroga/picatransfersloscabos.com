@@ -135,7 +135,7 @@ $( document ).ready(function() {
         }
 
         var formData = {
-            "homepage": 'https://picatransferloscabos.com',
+            "homepage": 'https://picatransfersloscabos.com',
             "unit": $("#form-unit").val(),
             "hotel": selectedHotel,
             "service": $("#form-service").val(),
