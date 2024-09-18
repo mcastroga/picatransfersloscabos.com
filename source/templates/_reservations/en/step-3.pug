@@ -6,12 +6,20 @@
       .row
         .col-12.col-sm-12.col-md-12.col-lg-6
           label Baby Seat
-          input#form-babyseat(type='text' name='babyseat')
+          select#form-extras-babyseat
+            option(name="babyseat" value="0") 0
+            option(name="babyseat" value="1") 1
+            option(name="babyseat" value="2") 2
+            option(name="babyseat" value="3") 3
         .col-12.col-sm-12.col-md-12.col-lg-6
           label Buster Seat
-          input#form-busterseat(type='text' name='busterseat')
+          select#form-extras-busterseat
+            option(name="busterseat" value="0") 0
+            option(name="busterseat" value="1") 1
+            option(name="busterseat" value="2") 2
+            option(name="busterseat" value="3") 3
         .col-12.col-sm-12.col-md-12.col-lg-6
           label Grocery Stop for 30 min (30 USD)
-          input#form-grocery(type='checkbox' name='grocery')
+          input#form-extras-grocery(type='checkbox' name='grocery')
       .col-sm-12
         input#send-step-3.submit-button(type='button' name='SEND' value='SEND')

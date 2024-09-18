@@ -1,11 +1,14 @@
-var airlines = null;
-selectedVehicle = null;
-selectedService = null;
-selectedZone = null;
-selectedHotel = null;
-selectedPassengers = null;
-tax = null;
-pricetotal = null;
+let EXTRAS_BABYSEAT;
+let EXTRAS_BUSTERSEAT;
+let EXTRAS_GROCERY;
+let HOTEL_NAME = null;
+let HOTEL_ZONE = null;
+let PRICE_CASH;
+let PRICE_PAYPAL;
+let PRICE_TOTAL;
+let SERVICE = "One Way";
+let SERVICE_TYPE = "Airport - Hotel";
+let TAX;
 
 $( document ).ready(function() {
 
@@ -63,12 +66,12 @@ $( document ).ready(function() {
     function updatePrices(event) {
         // Inputs
         var selectedUnit = $( "#form-unit" ).val();
-        var selectedService = $( "#form-service" ).val();
+        var SERVICE = $( "#form-service" ).val();
         var unitIndex = getPosition(selectedUnit);
 
         // Early checks
         $( "#send-step-1" ).attr('disabled', 'disabled');
-        if (unitIndex < 0 || selectedUnit === "false" || selectedZone  === "false") return;
+        if (unitIndex < 0 || selectedUnit === "false" || HOTEL_ZONE  === "false") return;
 
         if ($("#form-service").val() === "Round Trip") {
             $("#departure").css("display", "flex");
@@ -93,9 +96,9 @@ $( document ).ready(function() {
         };
 
         // Formulas
-        var price = selectedService === "One Way"?
-            cars[unitIndex].prices[selectedZone - 1].oneway :
-            cars[unitIndex].prices[selectedZone - 1].roundtrip;
+        var price = SERVICE === "One Way"?
+            cars[unitIndex].prices[HOTEL_ZONE - 1].oneway :
+            cars[unitIndex].prices[HOTEL_ZONE - 1].roundtrip;
 
         price = parseInt(price);
 
@@ -103,21 +106,21 @@ $( document ).ready(function() {
             price = price + 30;
         }
 
-        pricenormal = price;
+        PRICE_CASH = price;
         // Outputs
-        tax = Math.round(price * 0.08);
-        pricetotal = Math.round(tax + price);
-        pricepaypal = pricetotal;
+        TAX = Math.round(price * 0.08);
+        PRICE_TOTAL = Math.round(TAX + price);
+        PRICE_PAYPAL = PRICE_TOTAL;
 
         $("#price").html(`$ ${price}.00`);
         $('#price-cash').html(`$ ${price}.00`);
         $('#vehicleselected').html(selectedUnit);
-        $("#hotelselected").html(selectedHotel);
-        $("#serviceselected").html(selectedService);
-        $("#selectedTax").html( `$ ${tax} USD` );
-        $("#priceTotal").html( `$ ${pricetotal} USD` );
-        $("#price-paypal").val( pricetotal );
-        $("#paypal-button-container").val( pricetotal );
+        $("#hotelselected").html(HOTEL_NAME);
+        $("#serviceselected").html(SERVICE);
+        $("#selectedTax").html( `$ ${TAX} USD` );
+        $("#priceTotal").html( `$ ${PRICE_TOTAL} USD` );
+        $("#price-paypal").val( PRICE_PAYPAL );
+        $("#paypal-button-container").val( PRICE_PAYPAL );
         $("#send-step-1").removeAttr('disabled');
     }
 
@@ -134,26 +137,40 @@ $( document ).ready(function() {
             return false;
         }
 
+        if ($("#form-extras-grocery")[0].checked === true) {
+          EXTRAS_GROCERY = '30 Minutes';
+        } else {
+          EXTRAS_GROCERY = 'No';
+        }
+
+        EXTRAS_BABYSEAT = $("#form-extras-babyseat").val();
+        EXTRAS_BUSTERSEAT = $("#form-extras-busterseat").val();
+
         var formData = {
-            "homepage": 'https://picatransfersloscabos.com',
-            "unit": $("#form-unit").val(),
-            "hotel": selectedHotel,
-            "service": $("#form-service").val(),
-            "destination": $("#form-destination").val(),
-            "name": $("#form-name").val(),
-            "email": $("#form-email").val(),
-            "phone": $("#form-phone").val(),
-            "arrival-date": $("#form-arrival-date").val(),
-            "arrival-time": $("#form-arrival-time").val(),
             "arrival-airline": $("#form-arrival-airline").val(),
+            "arrival-date": $("#form-arrival-date").val(),
             "arrival-flight": $("#form-arrival-flight").val(),
-            "departure-date": $("#form-departure-date").val(),
-            "departure-time": $("#form-departure-time").val(),
-            "departure-airline": $("#form-departure-airline").val(),
-            "departure-flight": $("#form-departure-flight").val(),
+            "arrival-time": $("#form-arrival-time").val(),
             "comments": $("#form-comment").val(),
-            "price-normal": pricenormal,
-            "price-paypal": pricepaypal
+            "departure-airline": $("#form-departure-airline").val(),
+            "departure-date": $("#form-departure-date").val(),
+            "departure-flight": $("#form-departure-flight").val(),
+            "departure-time": $("#form-departure-time").val(),
+            "email": $("#form-email").val(),
+            "extras-babyseat": EXTRAS_BABYSEAT,
+            "extras-busterseat": EXTRAS_BUSTERSEAT,
+            "extras-grocery": EXTRAS_GROCERY,
+            "homepage": 'https://picatransfersloscabos.com',
+            "hotel-logo": HOTEL_LOGO,
+            "hotel-name": HOTEL_NAME,
+            "hotel-zone": HOTEL_ZONE,
+            "name": $("#form-name").val(),
+            "pax": $("#form-unit").val(),
+            "phone": $("#form-phone").val(),
+            "price-normal": PRICE_CASH,
+            "price-paypal": PRICE_PAYPAL,
+            "service": $("#form-service").val(),
+            "service-type": $("#form-destination").val()
         };
 
         $.ajax({
@@ -193,8 +210,9 @@ $( document ).ready(function() {
                 enabled: true
             },
             onSelectItemEvent: function(elem) {
-                selectedZone = $("#form-hotel").getSelectedItemData().zone;
-                selectedHotel = $("#form-hotel").getSelectedItemData().name;
+                HOTEL_LOGO = $("#form-hotel").getSelectedItemData().logo;
+                HOTEL_NAME = $("#form-hotel").getSelectedItemData().name;
+                HOTEL_ZONE = $("#form-hotel").getSelectedItemData().zone;
             }
         },
 
