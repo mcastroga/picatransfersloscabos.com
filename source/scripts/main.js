@@ -159,7 +159,6 @@ $( document ).ready(function() {
         $.ajax({
             type: 'POST',
             url: 'https://mailer.hnb.mx/picatransfersloscabos.php',
-            //url: "https:/picatransferloscabos.php",
             dataType: "json",
             data: formData,
             success: function(response) {
