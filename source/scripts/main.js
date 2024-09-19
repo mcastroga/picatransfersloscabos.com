@@ -127,16 +127,6 @@ $( document ).ready(function() {
     $("#send-step-3").on("click", function(e) {
         e.preventDefault();
 
-        if ($("#form-name").val().trim().length < 4) {
-            alert('Name is required!');
-            return false;
-        }
-
-        if ($("#form-email").val().trim().length < 5) {
-            alert('Email is required!');
-            return false;
-        }
-
         if ($("#form-extras-grocery")[0].checked === true) {
           EXTRAS_GROCERY = '30 Minutes';
         } else {
@@ -190,9 +180,240 @@ $( document ).ready(function() {
         $("#step-4").css("display", "block");
     });
 
+    function checkName(event) {
+      NAME = $("#form-name").val();
+      if (NAME.trim().length < 5) {
+        $("#form-container-name").addClass("form-error");
+        CHECK_NAME = "";
+      } else {
+        $("#form-container-name").removeClass("form-error");
+        CHECK_NAME = "OK";
+      }
+    }
+
+    function checkEmail(event) {
+      EMAIL = $("#form-email").val();
+      if (EMAIL.trim().length < 5) {
+        $("#form-container-email").addClass("form-error");
+        CHECK_EMAIL = "";
+      } else {
+        $("#form-container-email").removeClass("form-error");
+        CHECK_EMAIL = "OK";
+      }
+    }
+
+    function checkPhone(event) {
+      PHONE = $("#form-phone").val();
+      if (PHONE.trim().length < 5) {
+        $("#form-container-phone").addClass("form-error");
+        CHECK_PHONE = "";
+      } else {
+        $("#form-container-phone").removeClass("form-error");
+        CHECK_PHONE = "OK";
+      }
+    }
+
+    function checkArrivalDate(event) {
+      ARRIVAL_DATE = $("#form-arrival-date").val();
+      if (ARRIVAL_DATE === "") {
+        $("#form-container-arrival-date").addClass("form-error");
+        CHECK_ARRIVAL_DATE = "";
+      } else {
+        $("#form-container-arrival-date").removeClass("form-error");
+        CHECK_ARRIVAL_DATE = "OK";
+        ARRIVAL_DATE_FULL = moment(ARRIVAL_DATE).format("dddd, MMMM D, Y");
+      }
+    }
+
+    // STEP 3 CHECK - CHECK ARRIVAL TIME IS VALID
+    function checkArrivalTime(event) {
+      ARRIVAL_TIME = $("#form-arrival-time").val();
+      if (ARRIVAL_TIME === "") {
+        $("#form-container-arrival-time").addClass("form-error");
+        CHECK_ARRIVAL_TIME = "";
+      } else {
+        $("#form-container-arrival-time").removeClass("form-error");
+        CHECK_ARRIVAL_TIME = "OK";
+      }
+    }
+
+    function checkArrivalAirline(event) {
+      ARRIVAL_AIRLINE = $("#form-arrival-airline").val();
+      if (ARRIVAL_AIRLINE === "Aeromexico") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/aeromexico.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Air Canada") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/air-canada.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Alaska Airlines") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/alaska-airlines.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "American Airlines") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/american-airlines.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Delta Airlines") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/delta-airlines.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Frontier Airlines") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/frontier-airlines.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Interjet") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/interjet.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Southwest Airlines") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/southwest-airlines.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Spirit") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/spirit.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "United") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/united.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "US Airways") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/us-airways.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Virgin") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/virgin.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Viva Aerobus") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/viva-aerobus.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "Volaris") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/volaris.jpg";
+      }
+      if (ARRIVAL_AIRLINE === "WestJet") {
+        ARRIVAL_LOGO = "https://mailer.hnb.mx/airlines/westjet.jpg";
+      }
+    }
+
+    function checkArrivalFlight(event) {
+      ARRIVAL_FLIGHT = $("#form-arrival-flight").val();
+      if (ARRIVAL_FLIGHT === "") {
+        $("#form-container-arrival-flight").addClass("form-error");
+        CHECK_ARRIVAL_FLIGHT = "";
+      } else {
+        $("#form-container-arrival-flight").removeClass("form-error");
+        CHECK_ARRIVAL_FLIGHT = "OK";
+      }
+    }
+
+    function checkDepartureDate(event) {
+      DEPARTURE_DATE = $("#form-departure-date").val();
+      if (DEPARTURE_DATE === "") {
+        $("#form-container-departure-date").addClass("form-error");
+        CHECK_DEPARTURE_DATE = "";
+      } else {
+        $("#form-container-departure-date").removeClass("form-error");
+        CHECK_DEPARTURE_DATE = "OK";
+        DEPARTURE_DATE_FULL = moment(DEPARTURE_DATE).format("dddd, MMMM D, Y");
+      }
+    }
+
+    function checkDepartureTime(event) {
+      DEPARTURE_TIME = $("#form-departure-time").val();
+      if (DEPARTURE_TIME === "") {
+        $("#form-container-departure-time").addClass("form-error");
+        CHECK_DEPARTURE_TIME = "";
+      } else {
+        $("#form-container-departure-time").removeClass("form-error");
+        CHECK_DEPARTURE_TIME = "OK";
+      }
+    }
+
+    function checkDepartureAirline(event) {
+      DEPARTURE_AIRLINE = $("#form-departure-airline").val();
+      if (DEPARTURE_AIRLINE === "Aeromexico") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/aeromexico.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Air Canada") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/air-canada.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Alaska Airlines") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/alaska-airlines.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "American Airlines") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/american-airlines.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Delta Airlines") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/delta-airlines.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Frontier Airlines") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/frontier-airlines.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Interjet") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/interjet.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Southwest Airlines") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/southwest-airlines.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Spirit") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/spirit.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "United") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/united.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "US Airways") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/us-airways.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Virgin") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/virgin.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Viva Aerobus") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/viva-aerobus.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "Volaris") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/volaris.jpg";
+      }
+      if (DEPARTURE_AIRLINE === "WestJet") {
+        DEPARTURE_LOGO = "https://mailer.hnb.mx/airlines/westjet.jpg";
+      }
+    }
+
+    function checkDepartureFlight(event) {
+      DEPARTURE_FLIGHT = $("#form-departure-flight").val();
+      if (DEPARTURE_FLIGHT === "") {
+        $("#form-container-departure-flight").addClass("form-error");
+        CHECK_DEPARTURE_FLIGHT = "";
+      } else {
+        $("#form-container-departure-flight").removeClass("form-error");
+        CHECK_DEPARTURE_FLIGHT = "OK";
+      }
+    }
+
+
+    function checkStep3(event) {
+      if ( SERVICE === "One Way" && CHECK_NAME === "OK" && CHECK_EMAIL === "OK" && CHECK_PHONE === "OK" && CHECK_ARRIVAL_DATE === "OK" && CHECK_ARRIVAL_TIME === "OK" && CHECK_ARRIVAL_FLIGHT === "OK" ) {
+        $("#send-step-2").removeAttr("disabled", "disabled");
+      }
+      if ( SERVICE === "Round Trip" && CHECK_NAME === "OK" && CHECK_EMAIL === "OK" && CHECK_PHONE === "OK" && CHECK_ARRIVAL_DATE === "OK" && CHECK_ARRIVAL_TIME === "OK" && CHECK_ARRIVAL_FLIGHT === "OK" && CHECK_DEPARTURE_DATE === "OK" && CHECK_DEPARTURE_TIME === "OK" && CHECK_DEPARTURE_FLIGHT === "OK" ) {
+        $("#send-step-2").removeAttr("disabled", "disabled");
+      }
+      checkName();
+      checkEmail();
+      checkPhone();
+      checkArrivalDate();
+      checkArrivalTime();
+      checkArrivalFlight();
+      checkDepartureDate();
+      checkDepartureTime();
+      checkDepartureFlight();
+    }
+
 
     // Binds
     $("#form-unit, #form-hotel, #form-service, #form-grocery").on("change", updatePrices);
+    $("#form-name").on("keydown", checkName);
+    $("#form-email").on("keydown", checkEmail);
+    $("#form-phone").on("keydown", checkPhone);
+    $("#form-arrival-date").on("change", checkArrivalDate);
+    $("#form-arrival-time").on("change", checkArrivalTime);
+    $("#form-arrival-airline").on("change", checkArrivalAirline);
+    $("#form-arrival-flight").on("keydown", checkArrivalFlight);
+    $("#form-departure-date").on("change", checkDepartureDate);
+    $("#form-departure-time").on("change", checkDepartureTime);
+    $("#form-departure-airline").on("change", checkDepartureAirline);
+    $("#form-departure-flight").on("keydown", checkDepartureFlight);
+    $("#form-name, #form-email, #form-phone, #form-arrival-date, #form-arrival-time, #form-arrival-airline, #form-arrival-flight, #form-departure-date, #form-departure-time, #form-departure-airline, #form-departure-flight, #form-hotel-date, #form-hotel-time").on("change, keydown", checkStep3);
     $('.qtyplus, .qtyminus').on("click", updatePrices);
     var options = {
         url: '/json/transfers.json',

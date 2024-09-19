@@ -5,25 +5,25 @@
         .col-12
           h4 STEP 2 - Add your information
       .row
-        .col-12.col-sm-12.col-md-12.col-lg-6
+        #form-container-name.col-12.col-sm-12.col-md-12.col-lg-6
           label Full Name
           input#form-name(type="text" name="name")
-        .col-12.col-sm-12.col-md-12.col-lg-6
+        #form-container-email.col-12.col-sm-12.col-md-12.col-lg-6
           label Email
           input#form-email(type="text" name="email")
-        .col-12.col-sm-12.col-md-12.col-lg-6
+        #form-container-phone.col-12.col-sm-12.col-md-12.col-lg-6
           label Phone
           input#form-phone(type="number" name="phone")
       #arrival.row
         .col-12
           p Arrival Information
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-arrival-date.col-12.col-sm-6.col-md-6.col-lg-6
           label Date
           input#form-arrival-date(type="date" name="arrivaldate")
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-arrival-time.col-12.col-sm-6.col-md-6.col-lg-6
           label Time
           input#form-arrival-time(type="time" name="arrivaltime")
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-arrival-airline.col-12.col-sm-6.col-md-6.col-lg-6
           label Airline
           select#form-arrival-airline
             option(name="arrivalairline" value="Aeromexico") Aeromexico
@@ -37,19 +37,19 @@
             option(name="arrivalairline" value="Viva Aerobus") Viva Aerobus
             option(name="arrivalairline" value="Volaris") Volaris
             option(name="arrivalairline" value="WestJet") WestJet
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-arrival-flight.col-12.col-sm-6.col-md-6.col-lg-6
           label Flight #
           input#form-arrival-flight(type="text" name="arrivalflight" placeholder="Flight")
       #departure.row
         .col-12
           p Departure Information
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-departure-date.col-12.col-sm-6.col-md-6.col-lg-6
           label Date
           input#form-departure-date(type="date" name="departuredate")
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-departure-time.col-12.col-sm-6.col-md-6.col-lg-6
           label Time
           input#form-departure-time(type="time" name="departuretime")
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-departure-airline.col-12.col-sm-6.col-md-6.col-lg-6
           label Airline
           select#form-departure-airline
             option(name="departureairline" value="Aeromexico") Aeromexico
@@ -63,12 +63,12 @@
             option(name="departureairline" value="Viva Aerobus") Viva Aerobus
             option(name="departureairline" value="Volaris") Volaris
             option(name="departureairline" value="WestJet") WestJet
-        .col-12.col-sm-6.col-md-6.col-lg-6
+        #form-container-departure-flight.col-12.col-sm-6.col-md-6.col-lg-6
           label Flight #
           input#form-departure-flight(type="text" name="departureflight" placeholder="Flight")
       .row
-        .col-12
+        #form-container-comment.col-12
           label Requirements
           input#form-comment(name="comments" type="text" placeholder="Baby seat, booster seat, grocery stop, etc")
         .col-sm-12
-          input#send-step-2.submit-button(type="button" name="SEND" value="Check & Continue")
+          input#send-step-2.submit-button(type="button" name="SEND" value="Check & Continue" disabled='disabled')
