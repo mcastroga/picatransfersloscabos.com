@@ -1,3 +1,7 @@
+let ARRIVAL_DATE;
+let ARRIVAL_DATE_FULL;
+let DEPARTURE_DATE;
+let DEPARTURE_DATE_FULL;
 let EXTRAS_BABYSEAT;
 let EXTRAS_BUSTERSEAT;
 let EXTRAS_GROCERY;
@@ -139,11 +143,13 @@ $( document ).ready(function() {
         var formData = {
             "arrival-airline": $("#form-arrival-airline").val(),
             "arrival-date": $("#form-arrival-date").val(),
+            "arrival-date-full": ARRIVAL_DATE_FULL,
             "arrival-flight": $("#form-arrival-flight").val(),
             "arrival-time": $("#form-arrival-time").val(),
             "comments": $("#form-comment").val(),
             "departure-airline": $("#form-departure-airline").val(),
             "departure-date": $("#form-departure-date").val(),
+            "departure-date-full": DEPARTURE_DATE_FULL,
             "departure-flight": $("#form-departure-flight").val(),
             "departure-time": $("#form-departure-time").val(),
             "email": $("#form-email").val(),
@@ -157,7 +163,7 @@ $( document ).ready(function() {
             "name": $("#form-name").val(),
             "pax": $("#form-unit").val(),
             "phone": $("#form-phone").val(),
-            "price-normal": PRICE_CASH,
+            "price-cash": PRICE_CASH,
             "price-paypal": PRICE_PAYPAL,
             "service": $("#form-service").val(),
             "service-type": $("#form-destination").val()
