@@ -70,7 +70,7 @@ $( document ).ready(function() {
     function updatePrices(event) {
         // Inputs
         var selectedUnit = $( "#form-unit" ).val();
-        var SERVICE = $( "#form-service" ).val();
+        SERVICE = $( "#form-service" ).val();
         var unitIndex = getPosition(selectedUnit);
 
         // Early checks
@@ -106,7 +106,7 @@ $( document ).ready(function() {
 
         price = parseInt(price);
 
-        if( $('#form-grocery').is(':checked') ) {
+        if( $('#form-extras-grocery').is(':checked') ) {
             price = price + 30;
         }
 
@@ -407,7 +407,7 @@ $( document ).ready(function() {
 
 
     // Binds
-    $("#form-unit, #form-hotel, #form-service, #form-grocery").on("change", updatePrices);
+    $("#form-unit, #form-hotel, #form-service, #form-extras-grocery").on("change", updatePrices);
     $("#form-name").on("keydown", checkName);
     $("#form-email").on("keydown", checkEmail);
     $("#form-phone").on("keydown", checkPhone);
