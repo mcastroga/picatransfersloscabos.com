@@ -188,15 +188,13 @@ $( document ).ready(function() {
             dataType: "json",
             data: formData,
             success: function(response) {
-                $("#step-3").css("display", "none");
-                $("#step-4").css("display", "block");
+              $("#thanks-before").css("display", "none");
+              $("#thanks-after").css("display", "block");
             },
             error: function(xhr, status, error){
                 console.log(xhr);
             }
         });
-        $("#step-3").css("display", "none");
-        $("#step-4").css("display", "block");
     });
 
     function checkName(event) {
@@ -417,7 +415,6 @@ $( document ).ready(function() {
       checkDepartureTime();
       checkDepartureFlight();
     }
-
 
     // Binds
     $("#form-unit, #form-hotel, #form-service, #form-extras-grocery").on("change", updatePrices);
