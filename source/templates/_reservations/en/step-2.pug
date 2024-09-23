@@ -3,7 +3,10 @@
     .info.info-container
       .row
         .col-12
-          h4 STEP 2 - Add your information
+          .d-flex.align-items-center
+            a#go-back-step-1.return-button(href='#')
+              i.fa-solid.fa-chevron-left
+            h4 STEP 2 - Add your information
       .row
         #form-container-name.col-12.col-sm-12.col-md-12.col-lg-6
           label Full Name
@@ -70,21 +73,21 @@
         #form-container-comment.col-12
           label Complementary
           input#form-comment(name="comments" type="text" placeholder="Baby seat, booster seat, grocery stop, etc")
-        .col-12.col-sm-12.col-md-12.col-lg-4
+        .col-12.col-sm-6.col-md-6.col-lg-4
           label Baby Seat
           select#form-extras-babyseat
             option(name="babyseat" value="0 babyseat") 0
             option(name="babyseat" value="1 babyseats") 1
             option(name="babyseat" value="2 babyseats") 2
             option(name="babyseat" value="3 babyseats") 3
-        .col-12.col-sm-12.col-md-12.col-lg-4
+        .col-12.col-sm-6.col-md-6.col-lg-4
           label Car Seat
           select#form-extras-carseat
             option(name="carseat" value="0 carseat") 0
             option(name="carseat" value="1 carseat") 1
             option(name="carseat" value="2 carseat") 2
             option(name="carseat" value="3 carseat") 3    
-        .col-12.col-sm-12.col-md-12.col-lg-4
+        .col-12.col-sm-6.col-md-6.col-lg-4
           label Buster Seat
           select#form-extras-busterseat
             option(name="busterseat" value="0 busterseat") 0

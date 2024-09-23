@@ -3,14 +3,22 @@
 
 .navbar-brand
   img
-    padding 12px 0  
+    padding 12px 0
 
 .navbar, .navbar-brand
   padding 0
 
-.navbar-light
+.navbar
   background-color #556f7b
+
+  .navbar-toggler
+    background-image url('/images/vectors/burger-icon.svg')
+    background-repeat no-repeat
+    background-size contain
+    border-color transparent
+
   .navbar-nav
+    background-color #556f7b
     .nav-link
       align-items center
       color #fff
@@ -32,7 +40,7 @@
         font-size 12px!important
 
 @media (max-width 1280px)
-  .navbar-light
+  .navbar
     .navbar-nav
       .nav-link
         font-size 22px
@@ -40,7 +48,7 @@
         padding-right 30px
 
 @media (max-width 991px)
-  .navbar-light
+  .navbar
     .navbar-nav
       .nav-item
         padding 0
