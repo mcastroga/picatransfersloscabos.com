@@ -22,11 +22,11 @@ gulp.task('vendors', function() {
         "node_modules/easy-autocomplete/dist/easy-autocomplete.css",
         "node_modules/aos/dist/aos.css",
         "node_modules/animate.css/animate.min.css",
-        "node_modules/font-awesome/css/font-awesome.min.css"
+        "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     ])
         .pipe(concat("vendors.min.css"))
         .pipe(gulp.dest("website/css/"));
 
-    gulp.src("node_modules/font-awesome/fonts/*.*")
-        .pipe(gulp.dest("website/fonts"));
+    gulp.src("node_modules/@fortawesome/fontawesome-free/webfonts/*.*")
+        .pipe(gulp.dest("website/webfonts"));
 });

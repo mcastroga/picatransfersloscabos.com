@@ -1,25 +1,60 @@
 #step-3.row
-  form.col-sm-12
+  .col-sm-12
     .info.info-container
-      .col-12
-        h4 STEP 3 - Add some extras
-      .row
-        .col-12.col-sm-12.col-md-12.col-lg-6
-          label Baby Seat
-          select#form-extras-babyseat
-            option(name="babyseat" value="0 babyseat") 0 babyseat
-            option(name="babyseat" value="1 babyseats") 1 babyseats
-            option(name="babyseat" value="2 babyseats") 2 babyseats
-            option(name="babyseat" value="3 babyseats") 3 babyseats
-        .col-12.col-sm-12.col-md-12.col-lg-6
-          label Buster Seat
-          select#form-extras-busterseat
-            option(name="busterseat" value="0 busterseat") 0 busterseat
-            option(name="busterseat" value="1 busterseats") 1 busterseats
-            option(name="busterseat" value="2 busterseats") 2 busterseats
-            option(name="busterseat" value="3 busterseats") 3 busterseats
-        .col-12.col-sm-12.col-md-12.col-lg-6
-          label Grocery Stop for 30 min (30 USD)
-          input#form-extras-grocery(type='checkbox' name='grocery')
-      .col-sm-12
-        input#send-step-3.submit-button(type='button' name='SEND' value='SEND')
+      #thanks-before.row
+        .col-12
+          h4 STEP 3 - Choose your payment method
+        .col-12
+          p.text-center Thanks for choosing us!
+          p.text-center You can pay in cash when you arrive onboard our unit or pay now in PayPal.
+          br
+          .row
+            .col-sm-6.text-center
+              p
+                strong PAY IN CASH
+              .row
+                .col-sm-6.text-right
+                  p
+                    strong Total
+                .col-sm-6.text-left
+                  p
+                    strong#price-cash        
+                  
+            .col-sm-6.text-center
+              p
+                strong PAY IN PAYPAL
+              .row
+                .col-sm-6.text-right
+                  p Taxes
+                .col-6.text-left
+                  p#selectedTax
+              .row
+                .col-sm-6.text-right
+                  p
+                    strong Total
+                .col-sm-6.text-left
+                  p
+                    strong#priceTotal
+              .row
+                .col-12
+                  form#paypalform(action='https://www.paypal.com/mx/cgi-bin/webscr' method='post' name='paypalform')
+                    input(type='hidden' name='cmd' value='_xclick')
+                    input(type='hidden' name='business' value='picatransfers.loscabos@gmail.com')
+                    input(type='hidden' name='item_name' value='Tours')
+                    input(type='hidden' name='currency_code' value='USD')
+                    input(type='hidden' name='rm' value='2')
+                    input(type='hidden' name='return' value='http://picatransferloscabos.com')
+                    input(type='hidden' name='notify_url' value='http://picatransferloscabos.com')
+                    input#item_number(type='hidden' name='item_number' value='')
+                    input#price-paypal(type='hidden' name='amount' value='')
+                    input#click-paypal.margin-top-20(type='image' src='https://www.paypalobjects.com/es_XC/i/btn/btn_paynow_LG.gif' name='submit' alt="Make payments with PayPal - it's fast, free and secure!")
+                    img(alt='' border='0' src='https://www.paypalobjects.com/es_XC/i/scr/pixel.gif' width='1' height='1')
+          .row          
+            .col-6.text-center
+              button#gotothanks Pay on Cash
+            .col-6.text-center
+              button#gotothankspaypal Pay on Paypal  
+      #thanks-after.row
+        .col-12
+          p.text-center Your transportation service is confirmed with us
+          p.text-center Shortly You will receive your confirmation letter      

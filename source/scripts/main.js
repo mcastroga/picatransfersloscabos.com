@@ -128,7 +128,18 @@ $( document ).ready(function() {
         $("#send-step-1").removeAttr('disabled');
     }
 
-    $("#send-step-3").on("click", function(e) {
+    $('#gotothankspaypal').on('click', function(e) {
+      $('#gotothanks').trigger( "click" );
+      setTimeout(function() {
+        console.log('timeout enter');
+        $('#click-paypal').trigger( "click" );
+      }, 2000);
+    });
+
+
+    $('#gotothanks').on('click', function(e) {
+      $("#thanks-before").css("display", "none");
+      $("#thanks-after").css("display", "block");
         e.preventDefault();
 
         if ($("#form-extras-grocery")[0].checked === true) {
@@ -138,6 +149,7 @@ $( document ).ready(function() {
         }
 
         EXTRAS_BABYSEAT = $("#form-extras-babyseat").val();
+        EXTRAS_CARSEAT = $("#form-extras-carseat").val();
         EXTRAS_BUSTERSEAT = $("#form-extras-busterseat").val();
 
         var formData = {
@@ -154,6 +166,7 @@ $( document ).ready(function() {
             "departure-time": $("#form-departure-time").val(),
             "email": $("#form-email").val(),
             "extras-babyseat": EXTRAS_BABYSEAT,
+            "extras-carseat": EXTRAS_CARSEAT,
             "extras-busterseat": EXTRAS_BUSTERSEAT,
             "extras-grocery": EXTRAS_GROCERY,
             "homepage": 'https://picatransfersloscabos.com',

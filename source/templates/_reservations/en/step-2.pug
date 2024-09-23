@@ -68,7 +68,31 @@
           input#form-departure-flight(type="text" name="departureflight" placeholder="Flight")
       .row
         #form-container-comment.col-12
-          label Requirements
+          label Complementary
           input#form-comment(name="comments" type="text" placeholder="Baby seat, booster seat, grocery stop, etc")
+        .col-12.col-sm-12.col-md-12.col-lg-4
+          label Baby Seat
+          select#form-extras-babyseat
+            option(name="babyseat" value="0 babyseat") 0
+            option(name="babyseat" value="1 babyseats") 1
+            option(name="babyseat" value="2 babyseats") 2
+            option(name="babyseat" value="3 babyseats") 3
+        .col-12.col-sm-12.col-md-12.col-lg-4
+          label Car Seat
+          select#form-extras-carseat
+            option(name="carseat" value="0 carseat") 0
+            option(name="carseat" value="1 carseat") 1
+            option(name="carseat" value="2 carseat") 2
+            option(name="carseat" value="3 carseat") 3    
+        .col-12.col-sm-12.col-md-12.col-lg-4
+          label Buster Seat
+          select#form-extras-busterseat
+            option(name="busterseat" value="0 busterseat") 0
+            option(name="busterseat" value="1 busterseats") 1
+            option(name="busterseat" value="2 busterseats") 2
+            option(name="busterseat" value="3 busterseats") 3
+        .col-12.col-sm-12.col-md-12.col-lg-6
+          label Grocery Stop for 30 min (30 USD)
+          input#form-extras-grocery(type='checkbox' name='grocery')  
         .col-sm-12
           input#send-step-2.submit-button(type="button" name="SEND" value="Check & Continue" disabled='disabled')
