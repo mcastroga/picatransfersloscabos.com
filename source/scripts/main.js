@@ -460,4 +460,13 @@ $( document ).ready(function() {
     };
     $("#form-hotel").easyAutocomplete(options);
 
+    $('#go-back-step-1').on('click', function() {
+      $('#step-1').css('display', 'block');
+      $('#step-2').css('display', 'none');
+    };
+
+    $('#go-back-step-2').on('click', function() {
+      $('#step-2').css('display', 'block');
+      $('#step-3').css('display', 'none');
+    };
 });
